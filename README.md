@@ -32,3 +32,14 @@ console.log() {
 <!-- Link de emoji -->
 
 :heart_eyes:
+
+
+<!-- To do ( Marcar tareas ) -->
+[ ] Plátanos  
+[x] Manzanas Rojas  
+[ ] Manzanas Verdes  
+[x] Aguacates
+
+
+<!-- Mencionar a un usuario -->
+@toniblopez
