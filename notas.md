@@ -122,13 +122,16 @@ console.log() {
 <!-- GITHUB MARKDOWN -->
 
 <!-- To do ( Marcar tareas ) -->
+```
 [ ] Plátanos  
 [x] Manzanas Rojas  
 [ ] Manzanas Verdes  
 [x] Aguacates
+```
+<!-- Tengo que añadirle 3 tildes de apertura y 3 tildes de cierre para que me haga los saltos de línea tal y como están en el código -->
 
 
-<!-- Mencionar a un usuario -->
+<!-- Mencionar a un usuario ( De momento no he podido hacer que funcione ) ) -->
 @toniblopez
 
 
