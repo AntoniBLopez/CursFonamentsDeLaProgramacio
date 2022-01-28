@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt & PopUp</title>
+</head>
+<body>
+    <main>
+        <form>
+            <input type=button value="Iniciar" onClick="obtenerDatosUsuario()">
+        </form>
+        <div>
+            <p id="datosUsuarioFinal"></p>
+        </div>
+        <script>
+
+            function obtenerDatosUsuario () {
+                const nombreUsuario = prompt("Introduce tu Nombre y Apellidos:", "Ejemplo: Elon Musk")
+                const edadUsuario = prompt("Introduce tu Edad:", "Ejemplo: 37")
+
+                if (nombreUsuario == null || nombreUsuario == "") {
+                    alert("Debes de intoducir tu Nombre, Apellido y Edad para poder continuar")
+                }
+                else {  
+                if (edadUsuario == null || edadUsuario == "") {
+                        alert("Para poder continuar debes de introducir todos los datos")
+                    }
+                    else {
+                        console.log(`${nombreUsuario}, ${edadUsuario} años`)
+                    }
+                }
+
+                document.getElementById("datosUsuarioFinal").innerText = `
+                ${nombreUsuario}.
+                ${edadUsuario} años.`
+                alert(`Hola ${nombreUsuario}, haz click en Aceptar para imprimir tu nombre y edad en el navegador :P`)
+            }
+        </script>
+    </main>
+</body>
+</html>
