@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta página calcula diferentes operaciones a partir de 2 números enteros">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Opreacions Matemàtiques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Añade 2 números enteros y obten el resultado de varias operaciones</h1>
+        <label for="primerNumeroUsuario">
+            <span>Primer número entero: </span>
+            <input type="number" name="primerNumeroUsuario" id="primerNumeroUsuario" required>
+        </label>
+        <label for="segundoNumeroUsuario">
+            <span>Segundo número entero: </span>
+            <input type="number" name="segundoNumeroUsuario" id="segundoNumeroUsuario" required>
+        </label>
+        <input type="submit" value="Enviar" onClick="obtenerResultado()">
+        <div>
+            <p id="resultadoSuma"></p>
+            <p id="resultadoResta"></p>
+            <p id="resultadoMultiplicacion"></p>
+            <p id="resultadoDivision"></p>
+        </div>
+    </main>
+    <script src="./modul3_ex2.js"></script>
+</body>
+</html>
