@@ -1,10 +1,7 @@
 
 function obtenerResultado(primerNumero, segundoNumero) {
-    primerNumeroCliente = document.getElementById("primerNumeroUsuario")
-    segundoNumeroCliente = document.getElementById("segundoNumeroUsuario");
-
-    primerNumero = primerNumeroCliente.value
-    segundoNumero = segundoNumeroCliente.value
+    primerNumero = document.getElementById("primerNumeroUsuario").value
+    segundoNumero = document.getElementById("segundoNumeroUsuario").value
 
     Number(primerNumero) // Añado que son de tipo número porque en vez de sumar se me están concatenando
     Number(segundoNumero)
