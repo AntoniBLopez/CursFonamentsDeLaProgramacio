@@ -10,12 +10,8 @@ function obtenerDatosUsuario () {
             alert("Para poder continuar debes de introducir tu Edad")
         }
         else {
-            if (edadUsuario < 18) {
-                alert("Eres menor de edad")
-            }
-            else {
-                alert("Eres mayor de edad")
-            }
+            edadUsuario < 18 ? alert("Eres menor de edad") : alert("Eres mayor de edad")
+
             console.log(`${nombreUsuario}, ${edadUsuario} años`)
 
             document.getElementById("datosUsuarioFinal").innerText = `
