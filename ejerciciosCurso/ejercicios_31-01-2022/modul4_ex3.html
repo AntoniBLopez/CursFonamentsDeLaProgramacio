@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proba de veure si cumpleixes amb els requisits per adqirir la beca">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Requisits Beques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Procés de requisits per adquirir la beca</h1>
+        <form>
+            <label for="edadUsuario">
+                <span>¿Cuants anys tens?</span>
+                <input type="number" id="edadUsuario" required>
+            </label>
+            <h5> ( A continuació, escriu si o no en lletres minúscules per donar la teva resposta ) </h5>
+            <label for="tituloUniversitario">
+                <span>¿Tens un títol Universitari?</span>
+                <input type="text" id="tituloUniversitario" required>
+            </label>
+            <p>
+            <label for="prestacionPorDesempleo">
+                <span>¿Actualment estás a la tur?</span>
+                <input type="text" id="prestacionPorDesempleo" required>
+            </label>
+            <p>
+            <input type="submit" onclick="obtenerBeca()" value="Provar">
+        </form>
+        <p id="escribirMensaje"></p>
+    </main>
+    <script src="./modul4_ex3.js"></script>
+</body>
+</html>

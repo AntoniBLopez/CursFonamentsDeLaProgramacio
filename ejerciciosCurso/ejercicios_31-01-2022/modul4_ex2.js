@@ -19,7 +19,7 @@ function obtenerResultado() {
             document.getElementById("resultadoPosicionEscolar").innerText = "Batxillerat"
         }
         if(edadUsuario > 17) {
-            document.getElementById("resultadoPosicionEscolar").innerText = "Universitat"
+            document.getElementById("resultadoPosicionEscolar").innerText = "FP o Universitat"
         }
         if(edadUsuario >= 120) { // Extra para más diversión
             document.getElementById("resultadoPosicionEscolar").innerText = "La probabilitat de que no estiguis viu és molt alta"
