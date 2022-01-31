@@ -3,10 +3,7 @@ function obtenerResultado(primerNumero, segundoNumero) {
     primerNumero = document.getElementById("primerNumeroUsuario").value
     segundoNumero = document.getElementById("segundoNumeroUsuario").value
 
-    Number(primerNumero) // Añado que son de tipo número porque en vez de sumar se me están concatenando
-    Number(segundoNumero)
-
-    let resultadoSuma = primerNumero + segundoNumero; // Se me concatena en vez de sumar
+    let resultadoSuma = Number(primerNumero) + Number(segundoNumero);
     let resultadoResta = primerNumero - segundoNumero;
     let resultadoDivision = primerNumero / segundoNumero;
     let resultadoMultiplicacion = primerNumero * segundoNumero;
