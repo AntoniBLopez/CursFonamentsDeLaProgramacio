@@ -10,11 +10,16 @@ function obtenerDatosUsuario () {
             alert("Para poder continuar debes de introducir tu Edad")
         }
         else {
+            if (edadUsuario < 18) {
+                alert("Eres menor de edad")
+            }
+            else {
+                alert("Eres mayor de edad")
+            }
             console.log(`${nombreUsuario}, ${edadUsuario} años`)
 
             document.getElementById("datosUsuarioFinal").innerText = `
-            ${nombreUsuario}.
-            ${edadUsuario} años.`
+            ${nombreUsuario}, ${edadUsuario} años.`
             
             alert(`Hola ${nombreUsuario}, haz click en Aceptar para imprimir tu nombre y edad en el navegador :P`)
         }
