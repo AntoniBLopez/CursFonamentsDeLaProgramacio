@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="escription" content="Ver los días que tiene el mes que desee">
+    <meta name="robot" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Días del Mes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>¿Quieres saber los días que tiene un mes en concreto?</h1>
+        <label for="obtenerMesDelUsuario">
+            <h4>( Escribe un número del 1 al 12, siendo 1 = Enero y 12 = Diciembre )</h4>
+            <input type="number" id="obtenerMesDelUsuario" required>
+        </label>
+        <input type="submit" onclick="retornarDiasDelMesDeseado()" value="Obtener los días del mes">
+        <p id="imprimirResultado"></p>
+    </main>
+    <script src="./modul4_ex4.js"></script>
+</body>
+</html>

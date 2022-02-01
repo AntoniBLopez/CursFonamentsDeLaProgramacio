@@ -6,7 +6,7 @@ function obtenerResultado() {
         document.getElementById("resultadoPosicionEscolar").innerText = "Per veure la teva posició escolar has d'introduir correctament la teva edat"
     }
     else {
-        if(edadUsuario <= 5) {
+        if(edadUsuario <= 5 && edadUsuario >= 0) {
             document.getElementById("resultadoPosicionEscolar").innerText = "Preescolar"
         }
         if(edadUsuario > 5 && edadUsuario <= 11) {
@@ -21,7 +21,7 @@ function obtenerResultado() {
         if(edadUsuario > 17) {
             document.getElementById("resultadoPosicionEscolar").innerText = "FP o Universitat"
         }
-        if(edadUsuario >= 120) { // Extra para más diversión
+        if(edadUsuario >= 120 || edadUsuario < 0) { // Extra para más diversión
             document.getElementById("resultadoPosicionEscolar").innerText = "La probabilitat de que no estiguis viu és molt alta"
         }
     }
