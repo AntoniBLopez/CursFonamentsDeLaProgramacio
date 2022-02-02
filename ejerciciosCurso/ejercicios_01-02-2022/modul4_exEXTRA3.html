@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Let's play rock, paper, scissors">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <main>
+        <h1>¡Let's play Rock, Paper, Scissors against the pc! ✂️</h1>
+        <h3>Select the option you want:</h3>
+        <h4>1. Rock</h4>
+        <h4>2. Paper</h4>
+        <h4>3. Scissors</h4>
+        <label for="userNumber">
+            <input list="gameOptions" id="userNumber">
+            <datalist id="gameOptions">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+            </datalist>
+        </label>
+        <input type="submit" onclick="optionSelectedUser()" value="Play">
+        <div>
+            <p id="printResult"></p>
+        </div>
+    </main>
+    <script src="./modul4_exEXTRA3.js"></script>
+</body>
+</html>
