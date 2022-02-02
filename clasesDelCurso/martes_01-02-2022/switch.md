@@ -2,4 +2,4 @@
 
 * Per accedir al switch [click aquí](https://github.com/AraManjon/fdlp/blob/master/switch/switch.md)
 
-* Per accedir a condicionals bones práctiques [click aquí](https://github.com/AraManjon/fdlp/blob/master/condicionals-bones-practiques/condicionals-bonees-practiques.md)
+* Per accedir a condicionals bones práctiques [click aquí](https://github.com/AraManjon/fdlp/blob/master/condicionals-bones-practiques/condicionals-bones-practiques.md)
