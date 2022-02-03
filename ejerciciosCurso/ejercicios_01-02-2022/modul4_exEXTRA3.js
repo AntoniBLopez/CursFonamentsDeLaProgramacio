@@ -33,14 +33,14 @@ function userOptionSelection() {
 function optionSelectedUser() {
     const pcSelection = pcOptionSelection()
     const userSelection = userOptionSelection()
-
+    
     console.log(`El pc selecciona ${pcSelection}`)
     console.log(`El usuario selecciona ${userSelection}`)
     
-    const isTied = (pcSelection === "Rock" && userSelection === "Rock")  || (pcSelection === "Paper" && userSelection === "Paper") || (pcSelection === "Scissors" && userSelection === "Scissors")
-    const iWon = (pcSelection === "Rock" && userSelection === "Scissors")  || (pcSelection === "Paper" && userSelection === "Rock") || (pcSelection === "Scissors" && userSelection === "Paper")
-    const youWon = (pcSelection === "Paper" && userSelection === "Scissors")  || (pcSelection === "Scissors" && userSelection === "Rock") || (pcSelection === "Paper" && userSelection === "Scissors")
-    const userDontWantToPlay = userSelection !== "Rock" || userSelection !== "Paper" || userSelection !== "Scissors"
+    const isTied = pcSelection === userSelection
+    const pcWon = (pcSelection === "Rock" && userSelection === "Scissors")  || (pcSelection === "Paper" && userSelection === "Rock") || (pcSelection === "Scissors" && userSelection === "Paper")
+    const userWon = (pcSelection === "Rock" && userSelection === "Paper")  || (pcSelection === "Paper" && userSelection === "Scissors") || (pcSelection === "Scissors" && userSelection === "Rock")
+    const userDontWantToPlay = userSelection === "Rock" || userSelection === "Paper" || userSelection === "Scissors"
 
 
     const printResult = document.getElementById("printResult")
@@ -48,13 +48,13 @@ function optionSelectedUser() {
     if (isTied) {
         printResult.innerText = `I ${pcSelection} and you ${userSelection}. Tied ✌️`
     }
-    if (iWon) {
+    if (pcWon) {
         printResult.innerText = `I ${pcSelection} and you ${userSelection}. I Won!`
     }
-    if (youWon) {
+    if (userWon) {
         printResult.innerText = `I ${pcSelection} and you ${userSelection}. You Won!`
     }
-    if(userDontWantToPlay) {
-            printResult.innerText = "I understand you don't want to play. Bye"
-        }
+    if(!userDontWantToPlay) {
+        printResult.innerText = "I understand you don't want to play. Bye"
+    }
 }

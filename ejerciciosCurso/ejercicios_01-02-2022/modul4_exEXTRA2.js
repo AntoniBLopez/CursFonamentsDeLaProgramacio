@@ -111,8 +111,8 @@ function obtenerNumeroCliente() {
     // que nos devuelva el valor de la posición. Y que el valor sea el número escrito con letras. De esta manera:
 
 
-    //     const numeros = ["Cero", "Uno", "Dos", "Tres","Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez",
-    //                      "Once", "Doce", "Trece", "Catorce", "Quince" etc...]
+        const numeros = ["Cero", "Uno", "Dos", "Tres","Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez",
+        "Once", "Doce", "Trece", "Catorce", "Quince" etc...]
     
-    //     imprimirResultado.innerText = numeros[numeroEnteroUsuario]
+        imprimirResultado.innerText = numeros[numeroEnteroUsuario]
 }
