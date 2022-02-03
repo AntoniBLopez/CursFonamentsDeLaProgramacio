@@ -1,38 +1,25 @@
+const gameObjects = ["Rock", "Paper", "Scissors"]
 
-function pcOptionSelection() {
-    
-    let numRandom = Math.floor(Math.random() * (4 - 1)) + 1
-    
-    if(numRandom === 1) {
-        return "Rock"
-    }
-    if(numRandom === 2) {
-        return "Paper"
-    }
-    if(numRandom === 3) {
-        return "Scissors"
-    }
-}
+function gameOptionsSelection(player) {
 
-
-function userOptionSelection() {
-    
-    const userNumber = Number(document.getElementById("userNumber").value)
-    
-    if(userNumber === 1) {
-        return "Rock"
+    if(player === 1) {
+        return gameObjects[0]
     }
-    if(userNumber === 2) {
-        return "Paper"
+    if(player === 2) {
+        return gameObjects[1]
     }
-    if(userNumber === 3) {
-        return "Scissors"
+    if(player === 3) {
+        return gameObjects[2]
     }
 }
 
 function optionSelectedUser() {
-    const pcSelection = pcOptionSelection()
-    const userSelection = userOptionSelection()
+    
+    let numRandom = Math.floor(Math.random() * (4 - 1)) + 1
+    const userNumber = Number(document.getElementById("userNumber").value)
+    
+    const userSelection = gameOptionsSelection(userNumber)
+    const pcSelection = gameOptionsSelection(numRandom)
     
     console.log(`El pc selecciona ${pcSelection}`)
     console.log(`El usuario selecciona ${userSelection}`)
@@ -41,7 +28,6 @@ function optionSelectedUser() {
     const pcWon = (pcSelection === "Rock" && userSelection === "Scissors")  || (pcSelection === "Paper" && userSelection === "Rock") || (pcSelection === "Scissors" && userSelection === "Paper")
     const userWon = (pcSelection === "Rock" && userSelection === "Paper")  || (pcSelection === "Paper" && userSelection === "Scissors") || (pcSelection === "Scissors" && userSelection === "Rock")
     const userDontWantToPlay = userSelection === "Rock" || userSelection === "Paper" || userSelection === "Scissors"
-
 
     const printResult = document.getElementById("printResult")
     
