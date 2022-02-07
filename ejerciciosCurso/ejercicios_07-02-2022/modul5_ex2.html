@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add compressed numbers">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add Compressed Numbers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Add compressed numbers</h1>
+    <h3>This program calculates the sum of all compressed numbers between the first number (included) and the second (included)</h3>
+    <ul>
+        <li>The numbers entered must be integers.</li>
+    </ul>
+    <main>
+        <label for="numberOne">
+            <span>First number:</span>
+            <input type="number" id="numberOne" required>
+        </label>
+        <p>
+        <label for="numberTwo">
+            <span>Second number:</span>
+            <input type="number" id="numberTwo" required>
+        </label>
+        <input type="submit" onclick="addCompressedNumbers()" value="Add">
+        <div>
+            <p id="displayOnScreen"></p>
+        </div>
+    </main>
+    <script src="./modul5_ex2.js"></script>
+</body>
+</html>
