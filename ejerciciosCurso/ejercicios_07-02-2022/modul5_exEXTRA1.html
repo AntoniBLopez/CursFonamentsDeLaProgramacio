@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Let's play to hit the random number chosen by the pc">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's go play the game</title>
+</head>
+<body>
+    <main>
+        <h1>Let's play to hit the random number chosen by the pc</h1>
+        <h3>Terms:</h3>
+        <ul>
+            <li>The number must be a number positive integer between 1 and 500</li>
+            <li>Enjoy!</li>
+        </ul>
+        <label for="userNumber">
+            <span>Choose the number you want:</span>
+            <input type="number" placeholder="1-500" id="userNumber" required>
+        </label>
+        <input type="submit" onclick="start()">
+        <div>
+            <h1 id="printResult"></h1>
+            <p id="continuePlaying"></p>
+        </div>
+    </main>
+    <script src="./modul5_exEXTRA1.js"></script>
+</body>
+</html>
