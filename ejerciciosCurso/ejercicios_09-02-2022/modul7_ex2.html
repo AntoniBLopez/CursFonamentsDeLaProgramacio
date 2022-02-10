@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="Calculate the mean of the notes of the whole class">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculate the mean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Calculate the mean of the notes of the whole class</h1>
+        <h3>Guide & Rules:</h3>
+        <ul>
+            <li>Write the number of students in the class</li>
+            <li>Then, you must write the note of each of the students</li>
+            <li>The number of the notes must be a positive and integer number and be between 0 and 10</li>
+            <li>Let's go!</li>
+        </ul>
+        <label for="numberOfStudients">
+            <span>Write the number of students in the class:</span>
+            <input type="number" id="numberOfStudients">
+        </label>
+        <input type="submit" onclick="calculateMean()" value="Start">
+        <div>
+            <h2 id="printMessageOnDisplay"></h2>
+        </div>
+    </main>
+    <script src="./modul7_ex2.js"></script>
+</body>
+</html>
