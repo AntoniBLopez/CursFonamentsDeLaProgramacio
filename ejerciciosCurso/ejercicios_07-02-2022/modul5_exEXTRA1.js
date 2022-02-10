@@ -17,12 +17,17 @@ function start () {
 
     const userNumber = Number(document.getElementById("userNumber").value)
 
+    const userWin = randomNumer === userNumber
+
     if (validateNumber(userNumber)) {
         return printResult.innerText = ""
     }
-    if (letsPlay(randomNumer, userNumber, coldColdLower, coldColdUpper, warmWarmLower, warmWarmUpper) === false) {
+    if (userWin) {
         printResult.innerText = "🥳 Congratulations! You guessed the correct number 🎉"
         restartGame()
+    }
+    if (!userWin) {
+        letsPlay(userNumber)
     }
 }
 
@@ -33,11 +38,8 @@ function validateNumber(userNumber) {
     return false
 }
 
-function letsPlay(randomNumer, userNumber, coldLower, coldUpper, warmLower, warmUpper) {
+function letsPlay(userNumber) {
 
-    if (randomNumer === userNumber) {
-        return false
-    }
     if (userNumber < randomNumer && userNumber > warmLower) {
         return printResult.innerText = "🔥Hot Hot🔥 Your number is smaller"
     }
