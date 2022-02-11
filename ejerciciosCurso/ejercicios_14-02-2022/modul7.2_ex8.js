@@ -21,10 +21,4 @@ function printFibonacciSequence() {
     }
 
     printResultOnDisplay.innerText = showResult
-
-    // if (userNumber === 10) {
-    //     return printResultOnDisplay.innerText = 'The Fibonacci sequence is: 0,1,1,2,3,5,8,13,21,34... to infinity ꝏ'
-    // }
-
-    // return printResultOnDisplay.innerText = ''
 }
