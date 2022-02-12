@@ -1,0 +1,28 @@
+html {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.blockMain_square {
+    display: none;
+    background-color: rgb(247, 240, 142);
+}
+.blockMain_triangle {
+    display: none;
+    background-color: rgb(248, 150, 150);
+}
+.blockMain_rectangle {
+    display: none;
+    background-color: rgb(160, 160, 160);
+}
+.blockMain_circle {
+    display: none;
+    background-color: rgb(204, 146, 204);
+}
+
+.blockMain_square a, .blockMain_circle a, .blockMain_rectangle a, .blockMain_triangle a{
+    text-decoration: none;
+}
+.blockMain_square a:hover, .blockMain_circle a:hover, .blockMain_rectangle a:hover, .blockMain_triangle a:hover{
+    color: red;
+}

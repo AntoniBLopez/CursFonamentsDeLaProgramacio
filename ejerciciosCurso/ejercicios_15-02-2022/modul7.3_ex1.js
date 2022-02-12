@@ -1,0 +1,65 @@
+
+function showDataToCalculateGeometricFigure() {
+    const userFigureGeometric = document.getElementById('userFigureGeometric').value
+
+    if (userFigureGeometric === 'Square') {
+        document.getElementById('enterSquareData').style.display = 'block'
+    }
+    if (userFigureGeometric === 'Triangle') {
+        document.getElementById('enterTriangleData').style.display = 'block'
+    }
+    if (userFigureGeometric === 'Rectangle') {
+        document.getElementById('enterRectangleData').style.display = 'block'
+    }
+    if (userFigureGeometric === 'Circle') {
+        document.getElementById('enterCircleData').style.display = 'block'
+    }
+}
+
+function hideSquareData() {
+    document.getElementById('enterSquareData').style.display = 'none'
+}
+function hideTriangleData() {
+    document.getElementById('enterTriangleData').style.display = 'none'
+}
+function hideRectangleData() {
+    document.getElementById('enterRectangleData').style.display = 'none'
+}
+function hideCircleData() {
+    document.getElementById('enterCircleData').style.display = 'none'
+}
+
+function showSquareArea() {
+    const userSquareSide = document.getElementById('userSquareSide').value
+    const showResultAreaSquare = document.getElementById('showResultAreaSquare')
+
+    const squareAreaResult = userSquareSide * userSquareSide
+
+    showResultAreaSquare.innerText = `The area of the square is: ${squareAreaResult}cm²`
+}
+function showTriangleArea() {
+    const userTriangleBase = document.getElementById('userTriangleBase').value
+    const userTriangleHeight = document.getElementById('userTriangleHeight').value
+    const showResultAreaTriangle = document.getElementById('showResultAreaTriangle')
+
+    const triangleAreaResult = (userTriangleBase * userTriangleHeight) / 2
+
+    showResultAreaTriangle.innerText = `The area of the triangle is: ${triangleAreaResult}cm²`
+}
+function showRectangleArea() {
+    const userRectangleSideA = document.getElementById('userRectangleSideA').value
+    const userRectangleSideB = document.getElementById('userRectangleSideB').value
+    const showResultAreaRectangle = document.getElementById('showResultAreaRectangle')
+
+    const rectangleAreaResult = userRectangleSideA * userRectangleSideB
+
+    showResultAreaRectangle.innerText = `The area of the rectangle is: ${rectangleAreaResult}cm²`
+}
+function showCircleArea() {
+    const userCircleRadius = document.getElementById('userCircleRadius').value
+    const showResultAreaCircle = document.getElementById('showResultAreaCircle')
+
+    const circleAreaResult = userCircleRadius * userCircleRadius * 3.1416
+
+    showResultAreaCircle.innerText = `The area of the circle is: ${parseInt(circleAreaResult)}cm²`
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="Get the value of the area of the geometric figure you want">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Value of Area</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modul7.3_ex1.css">
+</head>
+<body>
+    <main class="blockMain">
+        <h1>Get the value of the area of the geometric figure you want</h1>
+
+        <label for="userFigureGeometric">
+            <span>Choose one of the geometric figures from the drop-down list:</span>
+            <input list="geometricFigures" id="userFigureGeometric" required>
+            <datalist id="geometricFigures">
+                <option value="Square"></option>
+                <option value="Triangle"></option>
+                <option value="Rectangle"></option>
+                <option value="Circle"></option>
+            </datalist>
+            <input type="submit" onclick="showDataToCalculateGeometricFigure()" value="Show 👁️">
+        </label>
+
+        <p>
+
+        <div id="enterSquareData" class="blockMain_square">
+            <label for="userSquareSide">
+                <h3><span>🟨Enter the length in centimeters of one side of the square:</span></h3>
+                <p>
+                <input type="number" id="userSquareSide" placeholder="5" required>
+                <input type="submit" onclick="showSquareArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaSquare" class="resultSquareArea"></h3>
+                <a href="javascript:void(0)" onclick="hideSquareData()">Hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterTriangleData" class="blockMain_triangle">
+            <label for="userTriangleBase">
+                <h3><span>🔺Enter the length in centimeters of the base and the height of the triangle:</span></h3>
+                <h5>( The height is the distance between the base and the top vertex )</h5>
+                <p>
+                <input type="number" id="userTriangleBase" placeholder="Base" required>
+                &
+                <input type="number" id="userTriangleHeight" placeholder="Height" required>
+                <input type="submit" onclick="showTriangleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaTriangle"></h3>
+                <a href="javascript:void(0)" onclick="hideTriangleData()">Hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterRectangleData" class="blockMain_rectangle">
+            <label for="userRectangleSideA">
+                <h3><span>➖Enter the length in centimeters of the two different sides of the rectangle:</span></h3>
+                <p>
+                <input type="number" id="userRectangleSideA" placeholder="Side a" required>
+                &
+                <input type="number" id="userRectangleSideB" placeholder="Side b" required>
+                <input type="submit" onclick="showRectangleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaRectangle"></h3>
+                <a href="javascript:void(0)" onclick="hideRectangleData()">Hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div id="enterCircleData" class="blockMain_circle">
+            <label for="userCircleRadius">
+                <h3><span>🟣Enter the length in centimeters of the radius of the circle:</span></h3>
+                <p>
+                <input type="number" id="userCircleRadius" placeholder="5" required>
+                <input type="submit" onclick="showCircleArea()" value="Get Area">
+                <p>
+                <h3 id="showResultAreaCircle"></h3>
+                <a href="javascript:void(0)" onclick="hideCircleData()">Hide 🚫</a>
+                <p>
+            </label>
+        </div>
+
+        <div>
+            <h3 class="printResultOnDisplay"></h3>
+        </div>
+
+    </main>
+    <script src="./modul7.3_ex1.js"></script>
+</body>
+</html>
