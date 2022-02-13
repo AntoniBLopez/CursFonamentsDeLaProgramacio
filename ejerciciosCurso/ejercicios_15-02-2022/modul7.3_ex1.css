@@ -1,24 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 html {
+    position: static;
     background-color: aquamarine;
     text-align: center;
+    position: sticky;
+    font-size: 62.5%;
+    font-size: 1rem;
+}
+* label {
+    position: relative;
+    top: 0.7vh;
+}
+main {
+    position: relative;
+    border: 7px solid rgb(248, 89, 89);
+    height: 100%;
+    padding: 20px 35px;
+    border-radius: 10px;
 }
 
-.blockMain_square {
+
+.blockMain_square, .blockMain_triangle, .blockMain_rectangle, .blockMain_circle {
+    position: relative;
     display: none;
+    border-radius: 1rem;
+    width: 70%;
+    left: 14%;
+    margin: 0.5%;
+    top: 1vh;
+}
+.blockMain_square span, .blockMain_triangle span, .blockMain_rectangle span, .blockMain_circle span {
+    position: relative;
+    border-bottom: 10rem;
+    top: 0.4rem;
+}
+.blockMain_square p, .blockMain_triangle p, .blockMain_rectangle p, .blockMain_circle p {
+    position: relative;
+    padding: 0.5rem;
+    top: 0.5rem;
+}
+.resultSquareArea, .resultTriangleArea, .resultRectangleArea, .resultCircleArea {
+    position: relative;
+    bottom: 0.4rem;
+}
+.blockMain_triangle h5 {
+    margin-top: 2%;
+}
+
+
+.blockMain_square {
     background-color: rgb(247, 240, 142);
 }
 .blockMain_triangle {
-    display: none;
     background-color: rgb(248, 150, 150);
 }
 .blockMain_rectangle {
-    display: none;
     background-color: rgb(160, 160, 160);
 }
 .blockMain_circle {
-    display: none;
     background-color: rgb(204, 146, 204);
 }
+
 
 .blockMain_square a, .blockMain_circle a, .blockMain_rectangle a, .blockMain_triangle a{
     text-decoration: none;
