@@ -10,16 +10,19 @@ html {
     font-size: 62.5%;
     font-size: 1rem;
 }
-* label {
-    position: relative;
-    top: 0.7vh;
-}
 main {
     position: relative;
     border: 7px solid rgb(248, 89, 89);
     height: 100%;
-    padding: 20px 35px;
-    border-radius: 10px;
+    padding: 10px 0 1% 0;
+    margin: 10px 7% 10px 7%;
+    border-radius: 0 0 90px 90px;
+}
+h1 {
+    margin: 0 10px 10px 10px;
+}
+strong {
+    font-size: 20px;
 }
 
 
@@ -27,10 +30,7 @@ main {
     position: relative;
     display: none;
     border-radius: 1rem;
-    width: 70%;
-    left: 14%;
-    margin: 0.5%;
-    top: 1vh;
+    margin: 1% 5%;
 }
 .blockMain_square span, .blockMain_triangle span, .blockMain_rectangle span, .blockMain_circle span {
     position: relative;
@@ -45,6 +45,8 @@ main {
 .resultSquareArea, .resultTriangleArea, .resultRectangleArea, .resultCircleArea {
     position: relative;
     bottom: 0.4rem;
+    margin: 0 27%;
+    border-radius: 5px;
 }
 .blockMain_triangle h5 {
     margin-top: 2%;
