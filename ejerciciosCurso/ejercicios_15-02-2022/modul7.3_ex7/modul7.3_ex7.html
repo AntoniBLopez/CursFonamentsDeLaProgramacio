@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="Show the necessary amount of ingredients and the price per person and end of a fideuá">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fideuá</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h1>Show the necessary amount of ingredients and the price per person and end of a fideuá</h1>
+        <label for="priceKiloOfNoodles">
+            <ul>
+                <li>
+                    <span>Indicates the price in euros per kilo of noodles:</span>
+                    <input type="number" id="priceKiloOfNoodles" placeholder="12.50" required> €
+                </li>
+            </ul>
+        </label>
+        <p>
+        <label for="priceKiloOfPrawns">
+            <ul>
+                <li>
+                    <span>Indicate the price in euros per kilo of prawns:</span>
+                    <input type="number" id="priceKiloOfPrawns" placeholder="15.99" required> €
+                </li>
+            </ul>
+        </label>
+        <p>
+        <label for="priceKiloOfSquid">
+            <ul>
+                <li>
+                    <span>Indicates the price in euros per kilo of squid:</span>
+                    <input type="number" id="priceKiloOfSquid" placeholder="32" required> €
+                </li>
+            </ul>
+        </label>
+        <p>
+        <label for="amountOfPeopleWhoWillEat">
+            <ul>
+                <li>
+                    <span>Indicate how many people the fideuá is for</span>
+                    <input type="number" id="amountOfPeopleWhoWillEat" placeholder="4" required>
+                    <input type="submit" onclick="calculateIngredientsAndPrice()" value="Calculate">
+                </li>
+            </ul>
+        </label>
+        <div>
+            <h3 id="printResultOfIngredients"></h3>
+            <h3 id="printResultOfPrices"></h3>
+        </div>
+    </main>
+    <script src="./modul7.3_ex7.js"></script>
+</body>
+</html>
