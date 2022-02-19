@@ -73,3 +73,7 @@ strong {
 .blockMain_square a:hover, .blockMain_circle a:hover, .blockMain_rectangle a:hover, .blockMain_triangle a:hover{
     color: red;
 }
+
+.buttonShow {
+    border-radius: 0.5rem;
+}

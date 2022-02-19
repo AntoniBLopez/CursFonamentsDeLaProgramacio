@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Comfortaa', cursive;
+}
+
+body{
+background: #bfd7da;
+}
+
+.card-name{
+width: 350px;
+background: #fff;
+margin: 80px auto;
+padding: 30px;
+border-radius: 3px;
+box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.label-title{
+display: block;
+padding-bottom: 10px;
+color: #078195;
+font-size: 24px;
+text-align: center;
+line-height: 28px;
+font-weight: bold;
+margin-bottom: 30px;
+}
+
+.input-wrapper{
+position: relative;
+}
+
+.card-input{
+width: 100%;
+outline: none;
+padding: 10px 20px;
+background: #1058b5;
+cursor: pointer;
+position: relative;
+color: #e8eff1;
+border-radius: 3px;
+}
+
+.arrow{
+position: absolute;
+top: 16px;
+right: 20px;
+cursor: pointer;
+color: #e8eff1;
+}
+
+ul.card-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 52px;
+  display: none;
+  background: #dae6e8;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+ul.card-list.visible{
+display: block;
+}
+
+ul li{
+padding: 10px 20px;
+cursor: pointer;
+border-bottom: 1px solid rgb(140, 140, 140);
+}
+
+ul li{
+border-top: 0;
+}
+
+ul li .fab,
+.card-input .fab{
+font-size: 32px;
+}
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+  <div class="card-name card-form">
+     <label class="label-title">Custom Select Box</label>
+    <div class="input-wrapper">
+      <div class="card-grp">
+         <div class="card-input">
+         </div>
+         <div class="arrow">
+             <i class="fas fa-caret-down fa-lg"></i>
+          </div>
+      </div>
+
+      <ul class="card-list">
+        <li><i class="fab fa-cc-visa"></i></li>
+        <li><i class="fab fa-cc-discover"></i></li>
+        <li><i class="fab fa-cc-amex"></i></li>
+        <li><i class="fab fa-cc-stripe"></i></li>
+        <li><i class="fab fa-cc-jcb"></i></li>
+      </ul>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+  $('.card-name .card-input').html($('.card-list li:first-child').html());
+
+             $('.card-grp').click(function() {
+                 $('.card-list').toggleClass('visible');
+             });
+
+             $('.card-list li').click(function() {
+                 $('.card-list').removeClass('visible');
+                 $('.card-input').html($(this).html());
+             });
+  </script>
+</body>
+</html>

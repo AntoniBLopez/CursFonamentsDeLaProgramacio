@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="content" content="Get the value of the area of the geometric figure you want">
+    <meta name="description" content="Get the value of the area of the geometric figure you want">
     <meta name="robots" content="index,follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Value of Area</title>
@@ -13,16 +13,16 @@
     <main class="blockMain">
         <h1>Get the value of the area of the geometric figure you want</h1>
 
-        <label for="userFigureGeometric">
+        <label for="userFigureGeometric" class="drop_downList">
             <span>Choose one of the geometric figures from the drop-down list:</span>
             <input list="geometricFigures" id="userFigureGeometric" required>
             <datalist id="geometricFigures">
-                <option value="Square"></option>
-                <option value="Triangle"></option>
-                <option value="Rectangle"></option>
-                <option value="Circle"></option>
+                <option value="Square" class="selectSquare"></option>
+                <option value="Triangle" class="selectTriangle"></option>
+                <option value="Rectangle" class="selectRectangle"></option>
+                <option value="Circle" class="selectCircle"></option>
             </datalist>
-            <input type="submit" onclick="showDataToCalculateGeometricFigure()" value="Show 👁️">
+            <input type="submit" class='buttonShow' onclick="showDataToCalculateGeometricFigure()" value="Show 👁️">
         </label>
 
         <p>
@@ -35,7 +35,7 @@
                 <input type="submit" onclick="showSquareArea()" value="Get Area">
                 <p>
                 <h3 id="showResultAreaSquare" class="resultSquareArea"></h3>
-                <a href="javascript:void(0)" onclick="hideSquareData()">Click here for hide 🚫</a>
+                <a href="javascript:void(0)" onclick="hideSquareData()">Click here to hide 🚫</a>
                 <p>
             </label>
         </div>
@@ -51,7 +51,7 @@
                 <input type="submit" onclick="showTriangleArea()" value="Get Area">
                 <p>
                 <h3 id="showResultAreaTriangle" class="resultTriangleArea"></h3>
-                <a href="javascript:void(0)" onclick="hideTriangleData()">Click here for hide 🚫</a>
+                <a href="javascript:void(0)" onclick="hideTriangleData()">Click here to hide 🚫</a>
                 <p>
             </label>
         </div>
@@ -66,7 +66,7 @@
                 <input type="submit" onclick="showRectangleArea()" value="Get Area">
                 <p>
                 <h3 id="showResultAreaRectangle" class="resultRectangleArea"></h3>
-                <a href="javascript:void(0)" onclick="hideRectangleData()">Click here for hide 🚫</a>
+                <a href="javascript:void(0)" onclick="hideRectangleData()">Click here to hide 🚫</a>
                 <p>
             </label>
         </div>
@@ -79,7 +79,7 @@
                 <input type="submit" onclick="showCircleArea()" value="Get Area">
                 <p>
                 <h3 id="showResultAreaCircle" class="resultCircleArea"></h3>
-                <a href="javascript:void(0)" onclick="hideCircleData()">Click here for hide 🚫</a>
+                <a href="javascript:void(0)" onclick="hideCircleData()">Click here to hide 🚫</a>
                 <p>
             </label>
         </div>
