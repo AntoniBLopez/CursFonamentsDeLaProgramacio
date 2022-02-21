@@ -22,9 +22,12 @@ let bingoLineThree = false
 let cardboard = false
 let roulette = false
 
-// function darkMode() {
-//     document.getElementsByClassName("html").style.background = "background-color: rgb(17, 16, 16)"
-// }
+const darkModeTag = document.querySelector(".containerHeader_aDarkMode")
+const body = document.querySelector("body")
+
+darkModeTag.addEventListener("click", e => {
+    body.classList.toggle("darkMode")
+})
 
 const numbersOnCardboards = [
     document.getElementsByClassName("div1"),

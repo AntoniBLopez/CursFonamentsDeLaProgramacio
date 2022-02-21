@@ -4,10 +4,12 @@
     margin: 0;
 }
 :root {
-    /* background-color: rgb(17, 16, 16); */
     font-size: 62.5%;
     padding: 2rem;    
     padding-top: 10rem;
+}
+body.darkMode {
+    background-color: rgb(17, 16, 16);
 }
 
 
@@ -56,10 +58,9 @@
     box-shadow: 0px 0px 15px #E91E63;
     /* color: black; */
 }
-/* .containerHeader_aDarkMode {
+.containerHeader_aDarkMode {
     margin-left: 1rem;
-    color: #F8A8A8;
-} */
+}
 
 
 .containerMain {
@@ -71,23 +72,25 @@
     padding: 1rem;
     padding-top: 3rem;
     border-radius: 2rem;
+    justify-content: center;
 }
 
 .containerMain_section {
     display: inline-block;
-    justify-content: space-evenly;
+    text-align: center;
     background-color: antiquewhite;
     width: 80%;
     height: 70%;
+    /* margin-left: 30%; */
     border-radius: 2rem;
     padding: 1rem;
     padding-top: 1.8rem;
-    text-align: left;
 }
 .containerMain_section article {
-    width: 80%;
+    display: inline-block;
+    width: 90%;
     height: 35%;
-    text-align: right;
+    text-align: center;
 }
 .containerMain_section div{
     /* background-color: rgb(255, 0, 119); */
