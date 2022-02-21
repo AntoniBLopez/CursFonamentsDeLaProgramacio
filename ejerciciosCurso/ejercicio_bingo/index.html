@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Let's play bingo!">
+    <meta name="robots" content="index,follow">
+    <title>Play Bingo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="containerHeader">
+        <picture class="containerHeader_picture">
+            <img alt="It is the logo of the website" title="Logo" src="https://img.icons8.com/external-justicon-flat-justicon/0/000000/external-lottery-gambling-justicon-flat-justicon.png">
+        </picture>
+        <div>
+            <h1>Let's play Bingo!</h1>
+            <h4>To get a lucky number click on the ball</h4>
+            <h4> below your numbers card</h4>
+            <a class="containerHeader_aCardBoard" href="#" onclick="getCardboard()">Get cardboard</a>
+            <!-- <a class="containerHeader_aDarkMode" href="#" onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="15" height="15"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e91e63"><path d="M63.06527,17.27979c-0.71203,0.02762 -1.41146,0.19653 -2.05761,0.49691c-25.05074,11.69549 -43.09098,36.9985 -43.09098,66.46664c0,40.49272 32.93061,73.42334 73.42334,73.42334c29.46814,0 54.77115,-18.04025 66.46663,-43.09098c0.97907,-2.09562 0.50781,-4.58259 -1.17006,-6.17474c-1.67787,-1.59215 -4.18611,-1.93247 -6.22756,-0.84495c-8.5278,4.54377 -18.21414,7.11068 -28.57568,7.11068c-33.71854,0 -60.91667,-27.19813 -60.91667,-60.91667c0,-10.36154 2.56691,-20.04789 7.11068,-28.57568c0.90381,-1.70012 0.82931,-3.75379 -0.19532,-5.38394c-1.02463,-1.63015 -2.84288,-2.5878 -4.76676,-2.51059z"></path></g></g></svg></a> -->
+        </div>
+    </header>
+
+    <main class="containerMain">
+        <section class="containerMain_section">
+            <article>
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+                <div class="div5"></div>
+                <div class="div6"></div>
+                <div class="div7"></div>
+                <div class="div8"></div>
+                <div class="div9"></div>
+            </article>
+
+            <article>
+                <div class="div11"></div>
+                <div class="div12"></div>
+                <div class="div13"></div>
+                <div class="div14"></div>
+                <div class="div15"></div>
+                <div class="div16"></div>
+                <div class="div17"></div>
+                <div class="div18"></div>
+                <div class="div19"></div>
+            </article>
+
+            <article>
+                <div class="div21"></div>
+                <div class="div22"></div>
+                <div class="div23"></div>
+                <div class="div24"></div>
+                <div class="div25"></div>
+                <div class="div26"></div>
+                <div class="div27"></div>
+                <div class="div28"></div>
+                <div class="div29"></div>
+            </article>
+
+        </section>
+
+        <aside class="containerMain_aside">
+            <h2 class="h2One">LINE!</h2>
+            <h2 class="h2Two">LINE!</h2>
+            <h2 class="h2Three">LINE!</h2>
+        </aside>
+
+        <div class="containerMain_result">
+            <a href="#" onclick="getResult()" title="Get ball"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#f01352"><path d="M86,6.88c-43.6192,0 -79.12,35.5008 -79.12,79.12c0,43.6192 35.5008,79.12 79.12,79.12c43.6192,0 79.12,-35.5008 79.12,-79.12c0,-43.6192 -35.5008,-79.12 -79.12,-79.12zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM97.93922,66.22c-2.3736,0 -4.05893,0.34669 -5.74453,1.03469c-1.6856,0.688 -3.02693,1.71463 -4.02453,3.09063c-1.3416,1.376 -2.03309,3.09734 -2.729,4.81734c-0.6536,1.72 -0.99438,3.78803 -0.99438,5.85203h6.0536c0,-1.376 -0.00135,-2.75737 0.34265,-3.78937c0,-1.032 0.69069,-2.05863 1.03469,-3.09063c0.6536,-1.032 1.33515,-1.72537 1.98875,-2.06937c0.688,-0.344 1.68775,-0.68531 3.06375,-0.68531c1.3416,0 2.68481,0.34131 3.37281,0.68531c0.9976,0.344 1.68506,1.032 2.02906,1.72c0.6536,0.688 0.99437,1.38137 0.99437,2.06937c0.344,1.032 0.34938,1.71731 0.34938,2.40531c0,1.72 -0.34669,3.09331 -1.03469,4.12531c-0.6536,1.032 -1.68318,2.06534 -2.68078,3.09734c-1.032,1.032 -2.37387,1.72269 -3.71547,2.75469c-1.3416,1.032 -2.37387,1.71597 -3.71547,2.74797c-2.6832,1.72 -4.712,3.78669 -6.0536,6.19469c-1.6856,2.408 -2.37844,5.504 -2.37844,8.6h25.97469v-5.84531h-18.54375c0.344,-0.688 0.65575,-1.72403 1.34375,-2.41203c0.688,-0.688 1.33972,-1.37465 2.37172,-2.06265c0.9976,-0.688 1.99815,-1.37465 3.03015,-2.06265c1.3416,-0.688 2.34081,-1.37466 3.37281,-2.06266c0.9976,-0.688 2.02584,-1.38003 3.02344,-2.41203c1.032,-1.032 2.03309,-2.06534 2.729,-3.09734c0.9976,-1.032 1.68587,-2.064 1.99547,-3.44c0.344,-1.032 0.68531,-2.40531 0.68531,-4.12531c0,-1.376 -0.34131,-2.74931 -0.68531,-4.12531c-0.3096,-1.376 -0.99787,-2.75737 -1.99547,-3.78937c-1.032,-1.376 -2.02987,-2.40263 -3.71547,-3.09063c-1.3416,-0.688 -3.37093,-1.03469 -5.74453,-1.03469zM69.6264,66.56265c-0.344,1.376 -0.68934,2.40935 -1.37734,3.09735c-0.6536,1.032 -1.68318,1.37465 -2.68078,2.06265c-1.032,0.344 -2.03121,0.69069 -3.37281,1.03469c-1.032,0.344 -2.37387,0.34265 -3.71547,0.34265v4.81735h9.46v27.52h6.74563v-38.87469z"></path></g></g></svg></a>
+            <h1 class="containerMain_result-h1"></h1>
+        </div>
+    </main>
+
+    <footer class="containerFooter">
+
+    </footer>
+    <script src="./letsPlay.js"></script>
+</body>
+</html>
