@@ -6,19 +6,31 @@
 
 // The program should be able to apply to each element of the array the function passed as the second parameter and return a new array with elements that accomplish the condition of function.
 
+
+// Simulación manual de lo que haría .filter() :
+
+const listNumbers = [1,2,3,4,5]
+
+const newArray = []
+
+let result;
+
 function successfulExercice (receiveArray, receiveFunction) {
 
-    newArray = receiveArray.filter(function(elementsArray) {
-        return receiveFunction(elementsArray)
-    })
+    for (i = 0; i < receiveArray.length; i++) {
+
+        receiveFunction(receiveArray[i])
+    }
 }
-
-
-successfulExercice([1, 2, 3, 4, 5], condition)
 
 function condition (num) {
-    return num >= 2
+
+    if (num >= 2) {
+        return newArray.push(num)
+    }
 }
+
+successfulExercice(listNumbers, condition)
 
 console.log(`Exercice 0: The new array with the result is: newArray[${newArray}]`)
 
