@@ -1,5 +1,3 @@
-
-
 import {num1, num2} from './numbers.mjs'
 
 // const result = document.getElementById('result')
