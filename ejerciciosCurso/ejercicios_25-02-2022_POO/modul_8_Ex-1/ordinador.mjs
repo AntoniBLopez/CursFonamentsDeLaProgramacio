@@ -47,7 +47,7 @@ export class Ordenador {
     }
 
     ejecutando (nombre) {
-        return console.log('En estos momentos se está ejecutando: ' + nombre)
+        return 'En estos momentos se está ejecutando: ' + nombre
     }
     descripcionCompleta() {
         return `
