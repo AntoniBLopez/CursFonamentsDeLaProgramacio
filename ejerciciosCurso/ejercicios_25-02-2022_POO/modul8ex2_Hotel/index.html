@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="It is a hotel project">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="currentHotels">Current Hotels:</h1>
+            -----------------------------------------
+            <article>
+                <ul>
+                    <li><h3>Create a Hotel</li></li>
+                </ul>
+                <label for="nameOfHotel">
+                    <span>Name:</span>
+                    <input id="nameOfHotel" type="text">
+                </label>
+                <p>
+                <label for="numberOfRooms">
+                    <span>Number of Rooms:</span>
+                    <input id="numberOfRooms" type="number">
+                </label>
+                <p>
+                <label for="numberOfPlants">
+                    <span>Number of plants:</span>
+                    <input id="numberOfPlants" type="number">
+                </label>
+                <p>
+                <label for="totalAreaOfTheHotel">
+                    <span>Total area of the Hotel in m²:</span>
+                    <input id="totalAreaOfTheHotel" type="number">
+                </label>
+                <p>
+            </article>
+            <div>
+                <input type="submit" value='Create' onclick="createHotel()" style="margin-left: 50px;">
+            </div>
+        </section>
+        --------------------------------
+        <section>
+            <ul>
+                <li><h3>Cancel a Hotel</li></li>
+            </ul>
+            <label for="nameOfCancelHotel">
+                <span>Name:</span>
+                <input id="nameOfCancelHotel" type="text">
+                <h4 id="alert"></h4>
+            </label>
+            <p>
+            <div>
+                <input type="submit" value='Cancel' onclick="cancelHotel()" style="margin-left: 50px;">
+            </div>
+        </section>
+        --------------------------------
+        <section>
+            <ul>
+                <li><h3>See Hotel</li></li>
+            </ul>
+            <label for="nameHotelWantSee">
+                <span>Name:</span>
+                <input id="nameHotelWantSee" type="text">
+            </label>
+            <p>
+            <div>
+                <input type="submit" value='See' onclick="seeHotel()" style="margin-left: 50px;">
+            </div>
+            <div>
+                <h4 id="showHotel"></h4>
+            </div>
+        </section>
+        --------------------------------
+        <section>
+            <ul>
+                <li id="tittleModifyHotel"><h3>Modify Hotel</li></li>
+                <h4 id="modifyValues" style="display: none;">( Write the modification you want and click on the corresponding button )</h4>
+            </ul>
+            <label for="hotelNameForModification">
+                <span>Name:</span>
+                <input id="hotelNameForModification" type="text">
+            </label>
+            <p>
+            <div>
+                <input type="submit" value='Modify' onclick="modifyHotel()" id="modifyHotel" style="margin-left: 50px;">
+                <input type="submit" value='Modify number of rooms' onclick="modifyRooms()" id="modifyRooms" style="display: none; margin-left: 50px">
+                <input type="submit" value='Modify number of plants' onclick="modifyPlants()" id="modifyPlants" style="display: none;">
+                <input type="submit" value='Modify total area of the Hotel' onclick="modifyTotalArea()" id="modifyTotalArea" style="display: none;">
+            </div>
+            <div>
+                <h4 id="showHotelModification"></h4>
+            </div>
+        </section>
+    </main>
+<script src="./hotel.js"></script>
+</body>
+</html>

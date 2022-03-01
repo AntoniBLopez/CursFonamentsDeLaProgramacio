@@ -12,26 +12,12 @@ import { Ordenador } from './ordinador.mjs'
 // los mismos atributos y métodos del súper prototipo con la sintáxis
 // de una clase
 
-let marca
-let modelo
-let memoriaRam
-let procesador
-let discoDuro
-
-function crearOrdenadores (num) {
-    marca = prompt(`Ordenador ${num}:\n¿Que marca es?`),
-    modelo = prompt(`Ordenador ${num}:\n¿Que modelo es?`),
-    memoriaRam = prompt(`Ordenador ${num}:\n¿De cuanto es su memoria RAM?`),
-    procesador = prompt(`Ordenador ${num}:\n¿Que procesador tiene?`),
-    discoDuro = prompt(`Ordenador ${num}:\n¿De cuanto es la capacidad del disco duro?`)
-}
-
 crearOrdenadores(1)
 
 const ordenadorUno = new Ordenador({
-    marca: marca,
     modelo: modelo,
     memoriaRam: memoriaRam,
+    marca: marca,
     procesador: procesador,
     capacidadDiscoDuro: discoDuro
 })
