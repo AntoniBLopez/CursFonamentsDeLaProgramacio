@@ -1,0 +1,17 @@
+{
+    "devDependencies": {
+      "jest": "^27.5.1"
+    },
+    "eslintConfig": {
+      "extends": "./node_modules/standard/eslintrc.json",
+      "env": {
+        "jest": true
+      }
+    },
+    "scripts": {
+      "test": "jest --verbose"
+    },
+    "jest": {
+      "testEnvironment": "node"
+    }
+  }
